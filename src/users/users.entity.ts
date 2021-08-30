@@ -4,26 +4,24 @@ import { Column, Entity, PrimaryGeneratedColumn, Timestamp } from 'typeorm';
 export class User {
   @PrimaryGeneratedColumn()
   id: number;
-  @Column({
-    type: 'varchar',
-  })
+
+  @Column()
   firstName: string;
-  @Column({
-    type: 'varchar',
-  })
+
+  @Column()
   lastName: string;
-  @Column({
-    type: 'varchar',
-  })
+
+  @Column()
   phone: string;
+
   @Column({
     type: 'date',
   })
   birthday: Date;
-  @Column({
-    type: 'varchar',
-  })
+
+  @Column()
   urlImage: string;
+
   @Column({
     type: 'timestamp',
   })
