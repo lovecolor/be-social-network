@@ -12,11 +12,10 @@ export const databaseProviders = [
         password: process.env.DATABASE_PASSWORD,
         database: 'SocialNetwork',
         entities: ['dist/src/**/*.entity{.ts,.js}'],
-        migrations: ['dist/src/db/migrations/*.js'],
+        migrations: ['dist/src/database/migrations/*.js'],
         cli: {
-          migrationsDir: 'src/db/migrations',
+          migrationsDir: 'src/database/migrations',
         },
-        
       }),
   },
 ];
